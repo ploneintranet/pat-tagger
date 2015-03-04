@@ -3,17 +3,17 @@ Example usage:
 
 This pattern argument takes the following arguments:
 
-- **source**: Selector of items *(.checked SHOULD NOT be added)* 
-- **target**: Selector of element where selected items are placed.
+- **source**: Selector of the checked items *(.checked SHOULD NOT be added)* 
+- **target**: Selector of element where selected links are placed.
 - **prepend**: Character or text to prepend to each link text.
-- **listprepend**: Character or text to prepend to list of links.
-- **description**: Selector in the selected item to use as text of the link.
+- **listprepend**: Character or text to prepend to the list of links.
+- **description**: Selector of the selected item to use as text of the link.
 
 
 The links created have the following structure:
 ```javascript
 var value = $(el).find('input').val(),
-    description = $(el).find('strong').html(),
+    description = $(el).find(options.description).html(),
     href = $(el).find('a').attr('href') || '#',
     link = '<a href="' + href +'" data-value-id="' + value + '">'+ options.prepend + description + '</a>';
 
@@ -52,6 +52,3 @@ var value = $(el).find('input').val(),
     </fieldset>
   </form>
 ```
-
-
-**Todo**  href should be passed in data attribute in checklist item.

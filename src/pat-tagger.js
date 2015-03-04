@@ -19,9 +19,9 @@
     parser.add_argument("source");
     // Text to prepend to each link (examples: # or @ for tags or mentions)
     parser.add_argument("prepend", "");
-    // Text to prepend to list of links
+    // Text to prepend to the list of links
     parser.add_argument("listprepend", "");
-    // Selector in the selected item to use as text of the link
+    // Selector of the selected item to use as text of the link
     parser.add_argument("description", "strong");
 
     var picker = {
