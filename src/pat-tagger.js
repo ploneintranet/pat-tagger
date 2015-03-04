@@ -13,14 +13,16 @@
 }(this, function($, registry, Parser) {
     var parser = new Parser("tagger");
 
+    // Selector where tagger should place links
     parser.add_argument("target");
+    // Selector of checklist items
     parser.add_argument("source");
-    // Text to prepend to links (examples: # or @ for tags or mentions)
+    // Text to prepend to each link (examples: # or @ for tags or mentions)
     parser.add_argument("prepend", "");
-    //
+    // Text to prepend to list of links
     parser.add_argument("listprepend", "");
-    // Selector for text in link
-    parser.add_argument("descripion", "");
+    // Selector in the selected item to use as text of the link
+    parser.add_argument("description", "strong");
 
     var picker = {
         name: "tagger",
@@ -35,7 +37,7 @@
                     var links = [];
                     $(options.source + '.checked').map(function(i, el){
                         var value = $(el).find('input').val(),
-                            description = $(el).find('strong').html(),
+                            description = $(el).find(options.description).html(),
                             href = $(el).find('a').attr('href') || '#',
                             link = '<a href="' + href +'" data-value-id="' + value + '">'+ options.prepend + description + '</a>';
                         links.push(link);

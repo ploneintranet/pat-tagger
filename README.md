@@ -5,7 +5,9 @@ This pattern argument takes the following arguments:
 
 - **source**: Selector of items *(.checked SHOULD NOT be added)* 
 - **target**: Selector of element where selected items are placed.
-- **prepend**: Character or text to prepend to link text.
+- **prepend**: Character or text to prepend to each link text.
+- **listprepend**: Character or text to prepend to list of links.
+- **description**: Selector in the selected item to use as text of the link.
 
 
 The links created have the following structure:
