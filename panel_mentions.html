@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="content">
+      <div class="item-selector mode-" id="mentions">
+        <form class="search-box pat-inject pat-autosubmit" action="/feedback/feedback-users.html#mentions-items">
+          <label>
+            <input name="" type="search" placeholder="Search" />
+            <button type="submit">Search</button>
+          </label>
+        </form>
+        <form 
+          action="#selected-users"
+          class="search-result users pat-autosubmit pat-tagger" 
+          data-pat-tagger="source: label.item.user; target: em#selected-users;prepend: @" 
+          id="mentions-items">
+          <fieldset class="checklist pat-checklist users ">
+            <label class="item user has-description">
+              <input name="" type="checkbox" value="guido-stevens"/>
+              <a class="follow" href="/guido-stevens">
+                <img src="/static/avatar-guido-stevens.jpg" alt="" class="avatar" />
+                <strong class="title">Guido A. J. Stevens</strong>
+                <br>
+                <dfn class="byline">Lorem ipsum dolor sit amet</dfn>
+              </a>
+            </label>
+            <label class="item user has-description">
+              <input name="" type="checkbox" value="cornelis-kolbach"/>
+              <a class="follow" href="/cornelis-kolbach">
+                <img src="/static/avatar-cornelis-kolbach.jpg" alt="" class="avatar" />
+                <strong class="title">Cornelis G. A. Kolbach</strong>
+                <br>
+                <dfn class="byline">Working against a deadline…</dfn>
+              </a>
+            </label>
+            <label class="item user has-no-description">
+              <input name="" type="checkbox" value="michael-mccorbin"/>
+              <a class="follow" href="/michael-mccorbin">
+                <img src="/static/avatar-michael-mccorbin.jpg" alt="" class="avatar" />
+                <strong class="title">Michael McCorbin</strong>
+              </a>
+            </label>
+            <label class="item user has-no-description">
+              <input name="" type="checkbox" value="lewis-litanzios"/>
+              <a class="follow" href="/lewis-litanzios">
+                <img src="/static/avatar-lewis-litanzios.jpg" alt="" class="avatar" />
+                <strong class="title">Lewis Litanzios</strong>
+              </a>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>

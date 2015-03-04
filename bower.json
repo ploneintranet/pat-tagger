@@ -1,0 +1,12 @@
+{
+  "name": "pat-tagger",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ploneintranet/pat-tagger",
+  "dependencies": {
+    "patternslib": "master",
+    "requirejs-text": "~2.0.12"
+  },
+  "resolutions": {
+    "jquery": ">=1.8"
+  }
+}

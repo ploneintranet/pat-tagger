@@ -1,0 +1,25 @@
+{
+    "name": "pat-tagger",
+    "version": "0.0.1",
+    "description": "A pattern to tag items from a list and preserve state on clientside",
+    "author": {
+        "name": "Plone Intranet Team",
+        "email": "paultax+plone@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:ploneintranet/pat-tagger.git"
+    },
+    "dependencies": {
+        "http-server": "^0.7.3"
+    },
+    "devDependencies": {
+        "bower": "latest",
+        "requirejs": ""
+    },
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="content">
+      <div class="item-selector mode-" id="mentions">
+        <form class="search-box pat-inject pat-autosubmit" action="/feedback/feedback-users.html#mentions-items">
+          <label>
+            <input name="" type="search" placeholder="Search" />
+            <button type="submit">Search</button>
+          </label>
+        </form>
+        <form id="items"
+              action="#selected-tags"
+              class="search-result tags pat-autosubmit pat-tagger" 
+              data-pat-tagger="source: label.item.tag;target: em#selected-tags;prepend: #">
+          <fieldset data-pat-checklist="select: #status-tag-selector .select-all; deselect: #status-tag-selector .deselect-all"
+                    class="checklist pat-checklist tags unchecked">
+            <label class="item tag has-no-description">
+              <input type="checkbox" name="tags:list" value="Design"/>
+              <a class="follow" href="/@@stream/Design/">
+                <strong class="title icon-tag">Design</strong>
+              </a>
+            </label>
+            <label class="item tag has-no-description">
+              <input type="checkbox" name="tags:list" value="Madrid"/>
+              <a class="follow" href="/@@stream/Madrid/">
+                <strong class="title icon-tag">Madrid</strong>
+              </a>
+            </label>
+            <label class="item tag has-no-description">
+              <input type="checkbox" name="tags:list" value="Samsung"/>
+              <a class="follow" href="/@@stream/Samsung/">
+                <strong class="title icon-tag">Samsung</strong>
+              </a>
+            </label>
+
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+  </body>
+  </html>
